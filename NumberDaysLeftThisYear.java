@@ -3,13 +3,12 @@
 // A program that takes the current date and prints the amount of days left in that year. 
 
 /*
- * input = current date
- * if leap year days left = 366
- * otherwise days left = 365
- * if month later than january subtract 31 days
- * if month later than february subtract 28 days (29 if leap year)
- * repeat for every year
- * subtract remaining days
+ * Input = current date
+ * Calculate if it is a leap year and store it in a variable
+ * Create switch statement and check what month it is
+ * The days left is just based off all the days in the month and every subsequent month
+ * Subtract remaining the remaining days of the month
+ * Print out to the console
  */
 
 import java.util.Scanner;
@@ -97,7 +96,7 @@ public class NumberDaysLeftThisYear {
       }
       // Repeated line of code; same for every month. 
       daysLeft -= day;
-
+      
       // List the "non" prefix if it is not a leap year. 
       String leapYearString = "non-";
       if (isLeapYear)
@@ -108,7 +107,7 @@ public class NumberDaysLeftThisYear {
       if (daysLeft == 1)
          multipleDaysLeft = "";
          
-         
+      // Print the days left and leap year status to the console. 
       System.out.println("There are " + daysLeft + " day" + multipleDaysLeft + " left in the " + leapYearString + "leap year " + year + ".");
    }
 }
