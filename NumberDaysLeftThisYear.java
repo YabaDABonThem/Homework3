@@ -85,7 +85,7 @@ public class NumberDaysLeftThisYear {
             if (isLeapYear)
                daysLeft = 335;  // If leap year February has 29 days
             else
-               daysLeft = 33;  // If not leap year February has 28 days
+               daysLeft = 334;  // If not leap year February has 28 days
             break;
          case "January":
             if (isLeapYear)
